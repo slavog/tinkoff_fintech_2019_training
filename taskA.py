@@ -1,4 +1,3 @@
-from memory_profiler import memory_usage
 T = int(input())
 for t in range(T):
     text = list(input())
@@ -7,4 +6,3 @@ for t in range(T):
         print('Yes')
     else:
         print('No')
-print(memory_usage())
