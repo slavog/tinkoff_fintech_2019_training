@@ -4,7 +4,7 @@ crashed = []
 roads = {}
 total = [0]
 module = 998244353
-# словарь со всеми дорогами из каждого города
+
 for _ in range(m):
     crashed.append(input().split())
 for i in range(1, n+1):
@@ -14,7 +14,6 @@ for z in crashed:
     roads[int(z[1])].remove(int(z[0]))
 
 
-# исходя из нужного расстояния нужно построить маршрут
 def searching_way(cur_city, step):
     if cur_city == 1 and step == k+1:
         total[0] += 1
