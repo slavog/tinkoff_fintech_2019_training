@@ -12,4 +12,4 @@ for village in range(N-1):
 dist_between.append(K - dist_north[-1] + dist_north[0])
 for _ in dist_between:
     result_list.append(sum(dist_between) - _)
-print(sorted(result_list)[0])
+print(min(result_list))
